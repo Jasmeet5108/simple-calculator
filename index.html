@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>A Calculator made using HTML, CSS and Javascript</h1>
+    <div class="calculator">
+        <div class="top">
+            <input type="text" id="result" disabled></input>
+            <button class="clear" onclick="Clear()">C</button>
+        </div>
+
+        <div class="second">
+            <button class="one" onclick="displayVal('1')">1</button>
+            <button class="two" onclick="displayVal('2')">2</button>
+            <button class="three" onclick="displayVal('3')">3</button>
+            <button class="divide" onclick="displayVal('/')">/</button>
+        </div>
+        <div class="third">
+            <button class="four" onclick="displayVal('4')">4</button>
+            <button class="five" onclick="displayVal('5')">5</button>
+            <button class="six" onclick="displayVal('6')">6</button>
+            <button class="subtract" onclick="displayVal('-')">-</button>
+        </div>
+        <div class="fourth">
+            <button class="seven" onclick="displayVal('7')">7</button>
+            <button class="eight" onclick="displayVal('8')">8</button>
+            <button class="nine" onclick="displayVal('9')">9</button>
+            <button class="add" onclick="displayVal('+')">+</button>
+        </div>
+        <div class="fifth">
+            <button class="dot" onclick="displayVal('.')">.</button>
+            <button class="zero" onclick="displayVal('0')">0</button>
+            <button class="equal" onclick="Result()">=</button>
+            <button class="multiply" onclick="displayVal('*')">*</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
